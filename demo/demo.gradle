@@ -1,0 +1,8 @@
+dependencies {
+    /* 测试用的junit */
+    testCompile libraries.hamcrestCore
+    testCompile libraries.junit
+    testCompile libraries.assertjCore
+
+    compile project(':core')
+}

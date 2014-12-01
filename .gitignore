@@ -1,0 +1,7 @@
+.idea
+.gradle
+build
+core/core.iml
+core/target
+demo/demo.iml
+demo/target

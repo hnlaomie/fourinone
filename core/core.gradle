@@ -1,0 +1,19 @@
+// usage: gradle -i runHello
+/*
+task runHello(type: JavaExec, dependsOn: classes) {
+    main = 'HelloWorld'
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
+*/
+
+dependencies {
+    /* 测试用的junit */
+    testCompile libraries.hamcrestCore
+    testCompile libraries.junit
+    testCompile libraries.assertjCore
+
+    compile libraries.slf4jApi
+    compile libraries.logbackClassic
+    compile libraries.logbackCore
+}
